@@ -45,7 +45,7 @@ variable "github_repository_name" {
 variable "github_oidc_role_name" {
   description = "Name of the GitHub OIDC role"
   type        = string
-  default     = "arn:aws:iam::255945442255:role/tk-tf-gh-3.1-github-oidc-role"
+  default     = "tk-tf-gh-3.1-github-oidc-role"
 }
 
 output "github_oidc_role_arn" {
