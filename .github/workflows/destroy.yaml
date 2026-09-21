@@ -33,6 +33,9 @@ jobs:
           echo "Finding all .tf files:"
           find . -name "*.tf"
 
+      - name: Terraform Init
+        run: terraform init
+
       - name: Terraform Plan for Destroy
         run: terraform plan -destroy
 
