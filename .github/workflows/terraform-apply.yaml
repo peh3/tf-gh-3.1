@@ -25,6 +25,15 @@ jobs:
 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v4
+
+    - name: Inspect Workspace and Files
+      run: |
+          echo "Current working directory:"
+          pwd
+          echo "Listing all files in this directory:"
+          ls -la
+          echo "Finding all .tf files:"
+          find . -name "*.tf"
    
     - name: Terraform Init
       run: terraform init
